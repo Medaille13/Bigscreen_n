@@ -20,7 +20,7 @@ return new class extends Migration
             ->references('id')
             ->on('questions');
 
-            $table->foreignId('_id')
+            $table->foreignId('people_id')
             ->references('id')
             ->on('peoples');            
 

@@ -58,8 +58,8 @@ class AnswersSeeder extends Seeder
             ['people_id'           => $people1,
             'question_id'        => $qcm1,           
             'reponse_typeA'      => "Homme",//$sexe[rand(0,2)],
-            'reponse_typeB'      => "null",
-            'reponse_typeC'      => "null",],
+            'reponse_typeB'      => null,
+            'reponse_typeC'      => null,],
         ]);
 
         // $qcm3 Quel marque de casque VR utilisez vous ?'
