@@ -15,16 +15,14 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-                {
-            $this->call([       
-                AnswerChoiceQuestionSeeder::class,
-                AnswerChoicesSeeder::class,
-                AnswersSeeder::class,
+    {  
+            $this->call([
+                TypeSeeder::class,   
                 PeopleSeeder::class,
                 QuestionSeeder::class,
-                TypeSeeder::class,                           
+                AnswerChoicesSeeder::class,      
+                AnswerChoiceQuestionSeeder::class,              
+                AnswerSeeder::class,                              
             ]);
-        }
     }
 }

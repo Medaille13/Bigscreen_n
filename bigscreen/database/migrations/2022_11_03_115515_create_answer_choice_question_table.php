@@ -15,13 +15,13 @@ return new class extends Migration
     {
         Schema::create('answer_choice_question', function (Blueprint $table) {
             $table->id()
-            ->autoIncrement();      
+                ->autoIncrement();      
             $table->foreignId('question_id')
-                    ->references('id')
-                    ->on('questions');
+                ->references('id')
+                ->on('questions');
             $table->foreignId('answer_choice_id')
-                    ->references('id')
-                    ->on('answer_choices');
+                ->references('id')
+                ->on('answer_choices');
         });
     }
 

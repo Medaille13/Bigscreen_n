@@ -5,22 +5,23 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use App\Models\People;
+use App\Models\Answer;
+use Faker\Factory as Faker;
 
-class PeopleSeeder extends Seeder
 
+class AnswerSeeder extends Seeder
 {
- 
     /**
-     * Run the database seeders.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        People::factory()
-                ->count(50)
+        Answer::factory()
                 ->create();
+
     }
-    
 }
+
+ 

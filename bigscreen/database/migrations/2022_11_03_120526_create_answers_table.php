@@ -24,9 +24,7 @@ return new class extends Migration
             ->references('id')
             ->on('peoples');            
 
-            $table->string('reponse_typeA')->nullable();
-            $table->string('reponse_typeB')->nullable();
-            $table->integer('reponse_typeC')->nullable();
+            $table->string('reponse')->nullable();
 
             $table->timestamps();
         });

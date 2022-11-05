@@ -7,8 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\People;
 use App\Models\Question;
 
-class Answers extends Model
+
+class Answer extends Model
 {
+    use HasFactory;
     protected $table = 'answers';
     protected $guarded = [];
     

@@ -11,8 +11,8 @@ use App\Models\AnswerChoice;
 class Question extends Model
 {
     use HasFactory;
-    {
-        protected $table = 'question';
+    
+        protected $table = 'questions'; // si suppression de 7 ligne tout ok //pas besoin de mettr cet ligne car bonne regle de nommage s ou sans s.
         protected $guarded = [];
         
         
@@ -32,9 +32,9 @@ class Question extends Model
             return $this->hasMany(Answer::class,'question_id','id')->with('user');
         }
         
-        public function answer_choice()
+        public function answer_choices()
         {
-            return $this->hasMany(AnswerChoice::class,'question_id','id');
+            return $this->belongsToMany(AnswerChoice::class);
         }    
     }
-}
+

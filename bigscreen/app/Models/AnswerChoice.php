@@ -16,9 +16,9 @@ class AnswerChoice extends Model
     protected $table = 'answer_choices';
     protected $guarded = [];
     
-    public function question()
+    public function questions()
     {
-        return $this->belongsToMany(Question::class,'question_id', 'id');
+        return $this->belongsToMany(Question::class);
     }
     
 }

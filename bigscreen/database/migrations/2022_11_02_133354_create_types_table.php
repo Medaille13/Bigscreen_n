@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('types', function (Blueprint $table) {
             $table->id()
-                    ->autoIncrement();
+                ->autoIncrement();
             $table->string('libelle');
             $table->timestamps();
         });
