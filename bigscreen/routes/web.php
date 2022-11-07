@@ -28,6 +28,18 @@ use Illuminate\Support\Facades\Route;
 
 //Récupération des questions et réponses affichées sur une autre page
 
+
+//poster l'enquête
+Route::post('/formulaire',"App\Http\Controllers\PeopleController@postanswer")->name('envoisondage');
+
+//page enquête
+Route::get('/formulaire',"App\Http\Controllers\PeopleController@getquestion")->name('formulaireSatisfaction');
+Route::get('/formulaire/{hash}',"App\Http\Controllers\PeopleController@getuserquestion")->name('getuserquestion');
+
+//test dd etc..
+Route::get('test',"App\Http\Controllers\TestController@index");
+
+
 //s'inscrire à l'administration (bonus car pas demandé)
 Route::post('/administration/inscription',"App\Http\Controllers\AdminController@inscription")->name("AdminInscription");
 Route::get('/administration/inscription', function()  {
@@ -54,7 +66,7 @@ Route::get('/administration/connexion', function () {
 
 Route::post('administration/accueil',"App\Http\Controllers\AdminController@read")->name("adminlogin");    
 
-Route::get('test',"App\Http\Controllers\TestController@index");
+
 
 
 //page d'accueil de l'administration + les graphiques controllers
