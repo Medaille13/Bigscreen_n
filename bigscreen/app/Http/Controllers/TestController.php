@@ -61,7 +61,5 @@ class TestController extends Controller
                     dd($allquestions->toArray(),$allpeoples->toArray());
                 }
                 
-                //récupérer la liste de tous les utilisateurs
-                //dump and die , tu me dump ce que j'ai dans la parenthese et tu stop
-                //questions, le type de question, et les réponses possible
+                
             }

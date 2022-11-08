@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('peoples', function (Blueprint $table) {
             $table->id();
-            $table->string('email')->nullable();
+            $table->string('email');
             $table->string('hash');
             $table->boolean('consent')->default(false);
             $table->timestamps();

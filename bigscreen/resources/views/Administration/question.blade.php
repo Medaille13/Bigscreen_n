@@ -1,0 +1,25 @@
+<html>
+<div>
+        
+        {{$quest[1]->titre}}<br/>
+        {{$quest[2]->titre}}<br/>
+        {{$quest[3]->titre}}<br/>
+        {{$quest[4]->titre}}<br/>
+        {{$quest[5]->titre}}<br/>
+        {{$quest[6]->titre}}<br/>
+        {{$quest[7]->titre}}<br/>
+        {{$quest[8]->titre}}<br/>
+        {{$quest[9]->titre}}<br/>
+        {{$quest[10]->titre}}<br/>
+        {{$quest[11]->titre}}<br/>
+        {{$quest[12]->titre}}<br/>
+        {{$quest[13]->titre}}<br/>
+        {{$quest[14]->titre}}<br/>
+        {{$quest[15]->titre}}<br/>
+        {{$quest[16]->titre}}<br/>
+        {{$quest[17]->titre}}<br/>
+        {{$quest[18]->titre}}<br/>
+        {{$quest[19]->titre}}<br/>
+        {{$quest[20]->titre}}<br/>
+    </div>
+</html>

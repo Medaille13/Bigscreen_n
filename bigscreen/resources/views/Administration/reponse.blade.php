@@ -1,0 +1,29 @@
+<html>
+<div>
+@foreach($answers as $answer)
+<div>
+<p>{{$request[1]->titre}}</p>
+<p>{{$answer->reponse}}</p>
+        {{$answer[0]->reponse}}<br/>
+        {{$answer[1]->reponse}}<br/>
+        {{$answer[2]->reponse}}<br/>
+        {{$answer[3]->reponse}}<br/>
+        {{$answer[4]->reponse}}<br/>
+        {{$answer[5]->reponse}}<br/>
+        {{$answer[6]->reponse}}<br/>
+        {{$answer[7]->reponse}}<br/>
+        {{$answer[8]->reponse}}<br/>
+        {{$answer[9]->reponse}}<br/>
+        {{$answer[10]->reponse}}<br/>
+        {{$answer[11]->reponse}}<br/>
+        {{$answer[12]->reponse}}<br/>
+        {{$answer[13]->reponse}}<br/>
+        {{$answer[14]->reponse}}<br/>
+        {{$answer[15]->reponse}}<br/>
+        {{$answer[16]->reponse}}<br/>
+        {{$answer[17]->reponse}}<br/>
+        {{$answer[18]->reponse}}<br/>
+        {{$answer[19]->reponse}}<br/>
+    </div>
+@endforeach    
+</html>

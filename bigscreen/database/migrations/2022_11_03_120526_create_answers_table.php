@@ -24,7 +24,7 @@ return new class extends Migration
             ->references('id')
             ->on('peoples');            
 
-            $table->string('reponse')->nullable();
+            $table->string('reponse');
 
             $table->timestamps();
         });
