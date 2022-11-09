@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "013f5c774db9ee5d9a0375a1b90c8c29",
     "packages": [
         {
             "name": "brick/math",
@@ -5357,6 +5357,56 @@
     ],
     "packages-dev": [
         {
+            "name": "bestmomo/laravel5-artisan-language",
+            "version": "V0.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bestmomo/laravel-artisan-language.git",
+                "reference": "7f951543c3313e764a3f18a9abb2c1033ee2a25d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bestmomo/laravel-artisan-language/zipball/7f951543c3313e764a3f18a9abb2c1033ee2a25d",
+                "reference": "7f951543c3313e764a3f18a9abb2c1033ee2a25d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.4|^6|^7|^8|^9",
+                "php": ">=5.6.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Bestmomo\\ArtisanLanguage\\ArtisanLanguageProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bestmomo\\ArtisanLanguage\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bestmomo",
+                    "email": "grandheretique@free.fr",
+                    "homepage": "https://laravel.sillo.org"
+                }
+            ],
+            "description": "Add artisan commands for language strings",
+            "homepage": "https://github.com/bestmomo/laravel-artisan-language",
+            "support": {
+                "issues": "https://github.com/bestmomo/laravel-artisan-language/issues",
+                "source": "https://github.com/bestmomo/laravel-artisan-language/tree/V0.3.3"
+            },
+            "time": "2022-03-02T19:28:51+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.4.1",
             "source": {
@@ -5614,6 +5664,67 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "laravel/breeze",
+            "version": "v1.14.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "4bb8e353790b3d797dec4451262d2a389e9c7461"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/4bb8e353790b3d797dec4451262d2a389e9c7461",
+                "reference": "4bb8e353790b3d797dec4451262d2a389e9c7461",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^9.21",
+                "illuminate/filesystem": "^9.21",
+                "illuminate/support": "^9.21",
+                "illuminate/validation": "^9.21",
+                "php": "^8.0.2"
+            },
+            "conflict": {
+                "laravel/framework": "<9.37.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2022-11-06T16:31:46+00:00"
         },
         {
             "name": "laravel/pint",
