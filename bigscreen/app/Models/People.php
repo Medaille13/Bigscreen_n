@@ -12,8 +12,13 @@ class People extends Model
     protected $table = "peoples";
     protected $guarded = [];
 
-    public function people()
+    public function answers()
     {
         return $this->hasMany(Answer::class);
+    }
+
+    public function answers_with_question()
+    {
+        return $this->hasMany(Answer::class)->with('question');
     }
 }

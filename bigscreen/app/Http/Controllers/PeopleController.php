@@ -14,20 +14,20 @@ class PeopleController extends Controller
     //récupération Question + AnswerChoice
     public function getquestion(){
         $quest = Question::all();
-        dump(session()->all());
+        //dump(session()->all());
         $choice = AnswerChoice::all();
         $user= null;
         return view("utilisateur.accueil",compact('quest','choice','user'));
     }
     
-    public function getuserquestion($hash){
-        $quest = Question::all();        
-        $choice = AnswerChoice::all();   
-        $user = People::where('hash','=', urldecode($hash))->first(); 
+    public function displayuserreponse($hash){
+        $questions = Question::all();          
+        $user = People::where('hash','=', urldecode($hash))->with('answers')->first();
+        //dd($user->answers[9]->reponse); 
         
         if(!is_null($user)){ 
-            dump($user->toArray());
-            return view("utilisateur.resultat",compact('quest','choice','user'));
+            //dump($user->toArray());
+            return view("utilisateur.resultat",compact('questions','user'));
         }else{
             $information = 'La page demandée n\'existe pas';
             return redirect()->route('formulairesatisfaction')->with('error',$information);
@@ -143,9 +143,7 @@ class PeopleController extends Controller
             'reponse'=>$request->reve,
         ]);
         
-        $message = 'Toute l’équipe de Bigscreen vous remercie pour votre engagement. Grâce à votre investissement, nous vous préparons une application toujours plus facile à utiliser, seul ou en famille.
-        Si vous désirez consulter vos réponse ultérieurement, vous pouvez consultez cette adresse: '.(route('getuserquestion',['hash'=>urlencode($user->hash)])); 
-        return back()->with('success',$message);
+            return back()->with('success',route('displayuserreponse',['hash'=>urlencode($user->hash)]));
     }
     
     

@@ -8,12 +8,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<h1 align="center">Sondage {{(!is_null($user)?$user->email:'bigscreen')}}</h1>
+<h1 align="center">Sondage bigscreen</h1>
     @if(session('success'))
-    <p>{{session('success')}}</p>
+    <div class="alert alert-success"><p>Toute l’équipe de Bigscreen vous remercie pour votre engagement. Grâce à votre investissement, nous vous préparons une application toujours plus facile à utiliser, seul ou en famille.
+             Si vous désirez consulter vos réponse ultérieurement, vous pouvez consultez cette adresse: <a href="{{session('success')}}">consulter les réponses</a></p></div>
     @endif
     @if(session('error'))
-    <p>{{session('error')}}</p>
+    <div class="alert alert-error"><p>{{session('error')}}</p></div>
     @endif
     <div class="container">
         <div class="row">

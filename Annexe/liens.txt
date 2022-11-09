@@ -6,3 +6,15 @@ https://trello.com/b/oIO6BjgR/bigscreen
 
 github
 https://github.com/Medaille13/Bigscreen_n
+
+
+https://laravel.com/docs/9.x/eloquent-relationships#one-to-many
+php artisan route:list
+
+https://laravel.com/docs/9.x/collections#available-methods
+
+
+
+answer->question->titre, récupere titre en rapport avec la question
+
+si l'id de la question est égal à la question_id de la réponse, alors tu m'affiches ce que je veux

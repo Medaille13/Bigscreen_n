@@ -21,7 +21,7 @@ class PeopleFactory extends Factory
 
         return [
             'email'=> $fakeemail,
-            'hash'=> Hash::make($fakeemail.time()),
+            'hash'=> md5($fakeemail.time()),
             'created_at'=> date("Y-m-d H:i:s"),
         ];
     }

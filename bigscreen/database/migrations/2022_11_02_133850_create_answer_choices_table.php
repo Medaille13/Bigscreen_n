@@ -15,7 +15,7 @@ return new class extends Migration
     {        
         Schema::create('answer_choices', function (Blueprint $table) {
             $table->id()
-                ->autoIncrement();
+            ->autoIncrement();
             $table->string('reponse');
             $table->timestamps();
         });
