@@ -15,18 +15,18 @@ class AdminController extends Controller
         $questions=Question::with('type')->get();
         return view("administration.question",compact('questions'));
     }
-
-
+    
+    
     //récupérer le numéro de la question, la question, et la réponse
-      
+    
     public function recuperationreponsequestion(){
         $users = People::with('answers_with_question')->get();
         foreach ($users as $user) {
             //dump($user->toArray());
         }
         //dd($users->toArray()); 
-
+        
         return view("administration.reponse",compact('users'));
-    //('answers')->get();
+        //('answers')->get();
     }
 }

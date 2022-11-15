@@ -17,11 +17,11 @@ class QuestionSeeder extends Seeder
     public function run()
     {
         // DB::statement('SET FOREIGN_KEY_CHECKS=0;');           
-       
+        
         $typeA = DB::table('types')->where('libelle', '=', 'A')->get(['id'])[0]->id;
         $typeB = DB::table('types')->where('libelle', '=', 'B')->get(['id'])[0]->id;
         $typeC = DB::table('types')->where('libelle', '=', 'C')->get(['id'])[0]->id;
-
+        
         DB::table('questions')->insert([
             ['type_id'=>$typeB,'titre'=> 'Quel est votre email ?'],
             ['type_id'=>$typeB,'titre'=> 'Quel est votre âge ?'],

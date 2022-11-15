@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\People;
 use App\Models\Question;
-
+use Illuminate\Support\Facades\DB;
 
 class Answer extends Model
 {
@@ -23,4 +23,5 @@ class Answer extends Model
     {
         return $this->belongsTo(People::class);
     }
+
 }

@@ -158,7 +158,7 @@ class AnswerChoiceQuestionSeeder extends Seeder
             ['question_id'=>$qcm16,'answer_choice_id'=>$rep7b],
             
         ]);
-
+        
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
     }
 }

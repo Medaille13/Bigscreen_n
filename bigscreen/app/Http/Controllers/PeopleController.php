@@ -32,14 +32,14 @@ class PeopleController extends Controller
             $information = 'La page demandée n\'existe pas';
             return redirect()->route('formulairesatisfaction')->with('error',$information);
         }   
-                
+        
     }
     
     //sauvegarde des réponses de l'utilisateur
     public function postanswer(Request $request){
         People::create([
             'email'=>$request->mail,
-            'hash'=>Hash::make($request->mail.date("Y-m-d H:i:s"))
+            'hash'=>md5($request->mail.date("Y-m-d H:i:s"))
         ]);
         $user=People::where('email',$request->mail)->first();
         Answer::create([
@@ -143,7 +143,7 @@ class PeopleController extends Controller
             'reponse'=>$request->reve,
         ]);
         
-            return back()->with('success',route('displayuserreponse',['hash'=>urlencode($user->hash)]));
+        return back()->with('success',route('displayuserreponse',['hash'=>urlencode($user->hash)]));
     }
     
     

@@ -10,17 +10,17 @@ use App\Models\People;
 class PeopleSeeder extends Seeder
 
 {
- 
+    
     /**
-     * Run the database seeders.
-     *
-     * @return void
-     */
+    * Run the database seeders.
+    *
+    * @return void
+    */
     public function run()
     {
         People::factory()
-                ->count(50)
-                ->create();
+        ->count(50)
+        ->create();
     }
     
 }

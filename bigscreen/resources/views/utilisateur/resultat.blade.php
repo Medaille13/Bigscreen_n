@@ -8,20 +8,20 @@
     <title>Sondage</title>
 </head>
 <body>
-<h1 align="center">Sondage {{(!is_null($user)?$user->email:'bigscreen')}}</h1>
-                    @foreach($questions as $question)
-                        @foreach($user->answers as $answer)
-                            @if($question->id == $answer->question_id)
-                            <div class="container">
-                            <div class="row">
-                            <form action="{{route('envoisondage')}}" method="POST">
-                                <div class="form-group mt-3">
-                                    <label >{{$question->titre}}</label><br>
-                                    <label class="alert alert-info">{{$answer->reponse}}</label>
-                                </div>
-                            </form> 
-                             @endif   
-                        @endforeach
-                    @endforeach
-</body>
-</html>
+    <h1 align="center">Sondage {{(!is_null($user)?$user->email:'bigscreen')}}</h1>
+    @foreach($questions as $question)
+    @foreach($user->answers as $answer)
+    @if($question->id == $answer->question_id)
+    <div class="container">
+        <div class="row">
+            <form action="{{route('envoisondage')}}" method="POST">
+                <div class="form-group mt-3">
+                    <label >{{$question->titre}}</label><br>
+                    <label class="alert alert-info">{{$answer->reponse}}</label>
+                </div>
+            </form> 
+            @endif   
+            @endforeach
+            @endforeach
+        </body>
+        </html>

@@ -14,7 +14,11 @@ php artisan route:list
 https://laravel.com/docs/9.x/collections#available-methods
 
 
+Bigscreen
+ff)S32QxZ*Won*IqvZ6a
+
 
 answer->question->titre, récupere titre en rapport avec la question
 
 si l'id de la question est égal à la question_id de la réponse, alors tu m'affiches ce que je veux
+

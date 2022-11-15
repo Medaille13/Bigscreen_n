@@ -1,5 +1,3 @@
-@extends('administration.layout')
-@section('content')
 <div>
   @foreach($users as $user)
   <table class="table table-striped">
@@ -21,5 +19,3 @@
     </tbody>
   </table>
   @endforeach
-</div>
-@endsection

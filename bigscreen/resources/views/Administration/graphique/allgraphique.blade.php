@@ -9,12 +9,11 @@
 </head>
 <body>
   <main class="container-fluid text-center  vh-100">
-    <div class="row h-100 ">    
+    <div class="row h-100 ">
       <div class="col-2 sticky-top d-flex flex-column justify-content-center align-items-center h-100 bg-info">
-        <div >     
-          <a href="{{route('administrationaccueil')}}">Revenir à l'accueil</a> <br><br><br><br>
-          <a href="{{route('recuperationquestion')}}">Question</a> <br>   
-          <a href="{{route('recupetout')}}">Reponses</a>  <br><br><br><br>
+        <div class="sticky-top">
+          Menu        
+          
           <a href="{{ route('logout') }}"
           onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
           {{ __('Log Out') }}
@@ -26,11 +25,8 @@
     </div>    
   </div>
   <div class="col h-100 py-4">
-    @yield('content')
-  </div>  
-</div>    
+@include('administration.graphique.grapha')
+  </div>
 </main>
-@yield('scripts')
 </body>
 </html>
-

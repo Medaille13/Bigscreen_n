@@ -22,17 +22,17 @@
                 <form action="{{route('envoisondage')}}" method="POST">
                     @csrf
                     <div class="form-group mt-3">
-                        <label for="exampleFormControlInput1">{{$quest[0]->titre}}</label>
+                        <label for="exampleFormControlInput1">{{$quest[0]->id}}. {{$quest[0]->titre}}</label>
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="mail">
                     </div>
 
                     <div class="form-group mt-3">
-                        <label for="exampleFormControlInput1">{{$quest[1]->titre}}</label>
+                        <label for="exampleFormControlInput1">{{$quest[1]->id}}. {{$quest[1]->titre}}</label>
                         <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="age">
                     </div>               
 
                     <div class="custom-control custom-radio mt-3">
-                        <label for="exampleFormControlInput1">{{$quest[2]->titre}}</label><br>
+                        <label for="exampleFormControlInput1">{{$quest[2]->id}}. {{$quest[2]->titre}}</label><br>
                         <input type="radio" id="customRadio1" name="sexe" class="custom-control-input" value="{{$choice[0]->reponse}}">
                         <label class="custom-control-label" for="customRadio1" >{{$choice[0]->reponse}}</label>
                     </div>
@@ -46,7 +46,7 @@
                     </div>
 
                     <div class="form-group mt-3" >
-                        <label for="exampleFormControlSelect2">{{$quest[3]->titre}}</label>
+                        <label for="exampleFormControlSelect2">{{$quest[3]->id}}. {{$quest[3]->titre}}</label>
                         <select class="form-control" id="exampleFormControlSelect2" name="foyer">
                             <option value="{{$choice[3]->reponse}}">{{$choice[3]->reponse}}</option>
                             <option value="{{$choice[4]->reponse}}">{{$choice[4]->reponse}}</option>
@@ -57,12 +57,12 @@
                     </div>
 
                     <div class="form-group mt-3">
-                        <label for="exampleFormControlInput1">{{$quest[4]->titre}}</label>
+                        <label for="exampleFormControlInput1">{{$quest[4]->id}}. {{$quest[4]->titre}}</label>
                         <input type="text" class="form-control" id="profession" placeholder="" name="profession">
                     </div>
 
                     <div class="custom-control custom-radio mt-3">
-                        <label for="exampleFormControlInput1">{{$quest[5]->titre}}</label><br>
+                        <label for="exampleFormControlInput1">{{$quest[5]->id}}. {{$quest[5]->titre}}</label><br>
                         <input type="radio" id="Occulus" name="MarqueCasqueUtilise" class="custom-control-input" value="{{$choice[8]->reponse}}">
                         <label class="custom-control-label" for="Occulus">{{$choice[8]->reponse}}</label>
                     </div>
@@ -81,7 +81,7 @@
 
 
                     <div class="custom-control custom-radio mt-3">
-                        <label for="exampleFormControlInput1">{{$quest[6]->titre}}</label><br>
+                        <label for="exampleFormControlInput1">{{$quest[6]->id}}. {{$quest[6]->titre}}</label><br>
                         <input type="radio" id="SteamVR" name="MagasinAppli" class="custom-control-input" value="{{$choice[12]->reponse}}">
                         <label class="custom-control-label" for="SteamVR">{{$choice[12]->reponse}}</label>
                     </div>
@@ -108,7 +108,7 @@
 
 
                     <div class="custom-control custom-radio mt-3">
-                        <label for="exampleFormControlInput1">{{$quest[7]->titre}}</label><br>
+                        <label for="exampleFormControlInput1">{{$quest[7]->id}}. {{$quest[7]->titre}}</label><br>
                         <input type="radio" id="OcculusQuest" name="CasqueAchat" class="custom-control-input" value="{{$choice[18]->reponse}}">
                         <label class="custom-control-label" for="OcculusQuest" >{{$choice[18]->reponse}}</label>
                     </div>
@@ -130,7 +130,7 @@
                     </div>
 
                     <div class="form-group mt-3">
-                        <label for="foyercasque">{{$quest[8]->titre}}</label>
+                        <label for="foyercasque">{{$quest[8]->id}}. {{$quest[8]->titre}}</label>
                         <select class="form-control" id="foyercasque" name="foyercasque">
                             <option value="{{$choice[3]->reponse}}">{{$choice[3]->reponse}}</option>
                             <option value="{{$choice[4]->reponse}}">{{$choice[4]->reponse}}</option>
@@ -141,8 +141,8 @@
                     </div>
 
                     <div class="custom-control custom-radio mt-3">
-                        <label for="utilisationBs">{{$quest[9]->titre}}</label><br>
-                        <input type="radio" id="tv" name="utilise" class="custom-control-input" value="{{$choice[23]->reponse}}">
+                        <label for="utilisationBs">{{$quest[9]->id}}. {{$quest[9]->titre}}</label><br>
+                        <input type="radio" id="tv" name="utilise" cl   ass="custom-control-input" value="{{$choice[23]->reponse}}">
                         <label class="custom-control-label" for="tv">{{$choice[23]->reponse}}</label>
                     </div>
                     <div class="custom-control custom-radio">
@@ -159,7 +159,7 @@
                     </div>
 
                     <div class="form-group mt-3">
-                        <label for="qualite">{{$quest[10]->titre}}</label>
+                        <label for="qualite">{{$quest[10]->id}}. {{$quest[10]->titre}}</label>
                         <select class="form-control" id="qualite" name="qualite">
                             <option value="{{$choice[3]->reponse}}">{{$choice[3]->reponse}}</option>
                             <option value="{{$choice[4]->reponse}}">{{$choice[4]->reponse}}</option>
@@ -170,7 +170,7 @@
                     </div>
 
                     <div class="form-group mt-3">
-                        <label for="confort">{{$quest[11]->titre}}</label>
+                        <label for="confort">{{$quest[11]->id}}. {{$quest[11]->titre}}</label>
                         <select class="form-control" id="confort" name="confort">
                             <option value="{{$choice[3]->reponse}}">{{$choice[3]->reponse}}</option>
                             <option value="{{$choice[4]->reponse}}">{{$choice[4]->reponse}}</option>
@@ -181,7 +181,7 @@
                     </div>
 
                     <div class="form-group mt-3">
-                        <label for="connexion">{{$quest[12]->titre}}</label>
+                        <label for="connexion">{{$quest[12]->id}}. {{$quest[12]->titre}}</label>
                         <select class="form-control" id="connexion" name="connexion">
                             <option value="{{$choice[3]->reponse}}">{{$choice[3]->reponse}}</option>
                             <option value="{{$choice[4]->reponse}}">{{$choice[4]->reponse}}</option>
@@ -192,7 +192,7 @@
                     </div>
 
                     <div class="form-group mt-3">
-                        <label for="dimension">{{$quest[13]->titre}}</label>
+                        <label for="dimension">{{$quest[13]->id}}. {{$quest[13]->titre}}</label>
                         <select class="form-control" id="dimension" name="dimension">
                             <option value="{{$choice[3]->reponse}}">{{$choice[3]->reponse}}</option>
                             <option value="{{$choice[4]->reponse}}">{{$choice[4]->reponse}}</option>
@@ -203,7 +203,7 @@
                     </div>
 
                     <div class="form-group mt-3">
-                        <label for="graphismes">{{$quest[14]->titre}}</label>
+                        <label for="graphismes">{{$quest[14]->id}}. {{$quest[14]->titre}}</label>
                         <select class="form-control" id="graphismes" name="graphismes">
                             <option value="{{$choice[3]->reponse}}">{{$choice[3]->reponse}}</option>
                             <option value="{{$choice[4]->reponse}}">{{$choice[4]->reponse}}</option>
@@ -214,7 +214,7 @@
                     </div>
 
                     <div class="custom-control custom-radio mt-3">
-                        <label for="notif">{{$quest[15]->titre}}</label><br>
+                        <label for="notif">{{$quest[15]->id}}. {{$quest[15]->titre}}</label><br>
                         <input type="radio" id="notifoui" name="notifouinon" class="custom-control-input" value="{{$choice[28]->reponse}}">
                         <label class="custom-control-label" for="notifoui">{{$choice[28]->reponse}}</label>
                     </div>
@@ -223,7 +223,7 @@
                         <label class="custom-control-label" for="notifnon">{{$choice[29]->reponse}}</label>
                     </div>
                     <div class="custom-control custom-radio mt-3">
-                        <label for="rejoindre">{{$quest[16]->titre}}</label><br>
+                        <label for="rejoindre">{{$quest[16]->id}}. {{$quest[16]->titre}}</label><br>
                         <input type="radio" id="rejoindreoui" name="rejoindreouinon" class="custom-control-input" value="{{$choice[28]->reponse}}">
                         <label class="custom-control-label" for="rejoindreoui">{{$choice[28]->reponse}}</label>
                     </div>
@@ -231,8 +231,8 @@
                         <input type="radio" id="rejoindrenon" name="rejoindreouinon" class="custom-control-input" value="{{$choice[28]->reponse}}">
                         <label class="custom-control-label" for="rejoindrenon">{{$choice[29]->reponse}}</label>
                     </div>
-                    <div class="custom-control custom-radio">
-                        <label for="enregistrer">{{$quest[17]->titre}}</label><br>
+                    <div class="custom-control custom-radio mt-3">
+                        <label for="enregistrer">{{$quest[17]->id}}. {{$quest[17]->titre}}</label><br>
                         <input type="radio" id="enregistreroui" name="enregistrerouinon" class="custom-control-input" value="{{$choice[28]->reponse}}">
                         <label class="custom-control-label" for="enregistreroui">{{$choice[28]->reponse}}</label>
                     </div>
@@ -241,7 +241,7 @@
                         <label class="custom-control-label" for="enregistrernon">{{$choice[29]->reponse}}</label>
                     </div>
                     <div class="custom-control custom-radio mt-3">
-                        <label for="exclusifs">{{$quest[18]->titre}}</label><br>
+                        <label for="exclusifs">{{$quest[18]->id}}. {{$quest[18]->titre}}</label><br>
                         <input type="radio" id="exclusifsoui" name="exclusifsouinon" class="custom-control-input" value="{{$choice[28]->reponse}}">
                         <label class="custom-control-label" for="exclusifsoui">{{$choice[28]->reponse}}</label>
                     </div>
@@ -251,7 +251,7 @@
                     </div>
 
                     <div class="form-group mt-3">
-                        <label for="reve">{{$quest[19]->titre}}</label>
+                        <label for="reve">{{$quest[19]->id}}. {{$quest[19]->titre}}</label>
                         <input type="text" class="form-control" id="reve" placeholder="" name="reve">
                     </div>   
                     <div class="mt-3">
