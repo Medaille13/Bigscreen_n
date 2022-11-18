@@ -145,19 +145,19 @@
         {
             @if($question_id == 11)
             label: 'qualité de l’image',
-            backgroundColor: 'rgba(255, 99, 132, 0.2) opacité',
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
             @elseif($question_id == 12)
             label: 'confort d’utilisation',
-            backgroundColor: 'rgba(10, 40, 12, 0.4    ) opacité',
+            backgroundColor: 'rgba(10, 40, 12, 0.4)',
             @elseif($question_id == 13)
             label: 'connexion réseau',
-            backgroundColor: 'rgba(255, 99, 132, 0.6    ) opacité',
+            backgroundColor: 'rgba(255, 99, 132, 0.6)',
             @elseif($question_id == 14)
             label: 'qualité des graphismes',
-            backgroundColor: 'rgba(255, 50, 255, 0.8    ) opacité',
+            backgroundColor: 'rgba(255, 50, 255, 0.8)',
             @elseif($question_id == 15)
             label: 'qualité audio',    
-            backgroundColor: 'rgba(255, 99, 132, 0.1    ) opacité',        
+            backgroundColor: 'rgba(255, 99, 132, 0.1)',        
             @endif
             
             data: [{{implode(',',$reponses)}}],

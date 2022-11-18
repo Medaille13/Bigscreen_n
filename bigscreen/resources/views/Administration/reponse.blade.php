@@ -1,8 +1,10 @@
 @extends('administration.layout')
 @section('content')
 <div>
+  @if($users->isNotEmpty())
   @foreach($users as $user)
-  <table class="table table-striped">
+  @if($user->answers_with_question->isNotEmpty())
+  <table class="table table-striped mb-3">
     <thead class="thead-dark">
       <tr>
         <th scope="col">Numéro</th>
@@ -20,6 +22,8 @@
       @endforeach
     </tbody>
   </table>
+  @endif
   @endforeach
+  @endif
 </div>
 @endsection

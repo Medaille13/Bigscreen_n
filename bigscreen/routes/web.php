@@ -29,19 +29,11 @@ Route::get('/reponses/{hash}',"App\Http\Controllers\PeopleController@displayuser
 
 
 //---------------------ADMIN------------------------
-//graphique de la page d'accueil
-Route::get('/grapha',"App\Http\Controllers\GraphiqueController@index")->name('index');
-Route::get('/graphb',"App\Http\Controllers\GraphiqueController@index_b")->name('indexb');
-Route::get('/graphc',"App\Http\Controllers\GraphiqueController@index_c")->name('indexc');
-Route::get('/graphd',"App\Http\Controllers\GraphiqueController@index_d")->name('indexc');
-
 
 //Middleware 
 Route::middleware('auth')->group(function () {
     //page d'accueil de l'administration + les graphiques controllers
     Route::get('/administration', "App\Http\Controllers\GraphiqueController@index")->name('administrationaccueil');    
-    //Route::get('/administration', "App\Http\Controllers\GraphiqueController@index_c")->name('administrationaccueil');  
-    //Route::get('/administration', "App\Http\Controllers\GraphiqueController@index_b")->name('administrationaccueil');
     //récupérer le numéro de la question, la question, le type
     Route::get('/administration/question',"App\Http\Controllers\AdminController@tableauquestion")->name('recuperationquestion');
     

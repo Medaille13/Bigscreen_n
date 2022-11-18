@@ -17,7 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string('email');
             $table->string('hash');
-            $table->boolean('consent')->default(false);
             $table->timestamps();
         });
     }

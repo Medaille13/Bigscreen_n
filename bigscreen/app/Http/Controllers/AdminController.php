@@ -21,11 +21,8 @@ class AdminController extends Controller
     
     public function recuperationreponsequestion(){
         $users = People::with('answers_with_question')->get();
-        foreach ($users as $user) {
-            //dump($user->toArray());
-        }
-        //dd($users->toArray()); 
         
+        //dd($users->toArray());         
         return view("administration.reponse",compact('users'));
         //('answers')->get();
     }
