@@ -23,16 +23,14 @@ class PeopleController extends Controller
     public function displayuserreponse($hash){
         $questions = Question::all();          
         $user = People::where('hash','=', urldecode($hash))->with('answers')->first();
-        //dd($user->answers[9]->reponse); 
-        
+        //dd($user->answers[9]->reponse);         
         if(!is_null($user)){ 
             //dump($user->toArray());
             return view("utilisateur.resultat",compact('questions','user'));
         }else{
             $information = 'La page demandée n\'existe pas';
             return redirect()->route('formulairesatisfaction')->with('error',$information);
-        }   
-        
+        }           
     }
     
     //sauvegarde des réponses de l'utilisateur
@@ -141,10 +139,7 @@ class PeopleController extends Controller
             'question_id'=>20,
             'people_id'=>$user->id,
             'reponse'=>$request->reve,
-        ]);
-        
+        ]);        
         return back()->with('success',route('displayuserreponse',['hash'=>urlencode($user->hash)]));
-    }
-    
-    
+    }   
 }

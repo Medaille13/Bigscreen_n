@@ -8,7 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<h1 align="center">Sondage bigscreen</h1>
+ <div class="container-first p-3 mb-2 bg-primary text-white">
+<h1 align="center"><span>Sondage</span> <span>Bigscreen</span></h1>
+</div>
     @if(session('success'))
     <div class="alert alert-success"><p>Toute l’équipe de Bigscreen vous remercie pour votre engagement. Grâce à votre investissement, nous vous préparons une application toujours plus facile à utiliser, seul ou en famille.
              Si vous désirez consulter vos réponse ultérieurement, vous pouvez consultez cette adresse: <a href="{{session('success')}}">consulter les réponses</a></p></div>
@@ -256,12 +258,12 @@
                     </div>   
                     <div class="mt-3 p-2">
                     <button type="submit" class="btn btn-primary">Valider</button>  
-
                     </div>    
                 </form> 
             </div>
         </div>
     </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script type="text/javascript" src="{{ asset('js/accueil.js') }}"></script>
 </body>
 </html>

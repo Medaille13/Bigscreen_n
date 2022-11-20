@@ -54,12 +54,7 @@ class TestController extends Controller
                             $answer->reponse = $reponse;                   
                             
                         }
-                    }
-                    
-                    
-                    
+                    }           
                     dd($allquestions->toArray(),$allpeoples->toArray());
                 }
-                
-                
             }

@@ -17,13 +17,10 @@ class AdminController extends Controller
     }
     
     
-    //récupérer le numéro de la question, la question, et la réponse
-    
+    //récupérer le numéro de la question, la question, et la réponse    
     public function recuperationreponsequestion(){
-        $users = People::with('answers_with_question')->get();
-        
+        $users = People::with('answers_with_question')->get();        
         //dd($users->toArray());         
         return view("administration.reponse",compact('users'));
-        //('answers')->get();
     }
 }

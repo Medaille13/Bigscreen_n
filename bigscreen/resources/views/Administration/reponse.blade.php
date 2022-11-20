@@ -1,5 +1,6 @@
 @extends('administration.layout')
 @section('content')
+<h1>Liste des réponses pour chaque sondé</h1>
 <div>
   @if($users->isNotEmpty())
   @foreach($users as $user)

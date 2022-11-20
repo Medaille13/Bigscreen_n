@@ -8,7 +8,9 @@
     <title>Sondage</title>
 </head>
 <body>
-    <h1 align="center">Sondage {{(!is_null($user)?$user->email:'bigscreen')}}</h1>
+ <div class="container-first p-3 mb-2 bg-primary text-white">
+    <h1 align="center"><span>Sondage</span> <span>{{(!is_null($user)?$user->email:'bigscreen')}}</span></h1>
+</div>    
     @foreach($questions as $question)
     @foreach($user->answers as $answer)
     @if($question->id == $answer->question_id)
@@ -19,9 +21,13 @@
                     <label >{{$question->titre}}</label><br>
                     <label class="alert alert-info">{{$answer->reponse}}</label>
                 </div>
-            </form> 
-            @endif   
-            @endforeach
-            @endforeach
-        </body>
-        </html>
+            </form>     
+        </div>
+    </div>        
+    @endif   
+    @endforeach
+    @endforeach
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script type="text/javascript" src="{{ asset('js/accueil.js') }}"></script>
+</body>
+</html>

@@ -37,14 +37,11 @@ class GraphiqueController extends Controller
         foreach($reponsesD as $key=>$reponse){
             //dump($key, $reponse->sortBy('reponse')->pluck('reponse')->countBy()->toArray());
             $countsD[$key] = $reponse->sortBy('reponse')->pluck('reponse')->countBy()->toArray();
-        }
-        //le reponse entre () provient de la base de données
-        
+            //le reponse entre () provient de la base de données
+        }        
         //dd($counts);
         return view('administration.accueil', compact('countsA','countsB','countsC','countsD'));   
-    }
-    
-    
+    } 
 }
 
 

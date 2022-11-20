@@ -1,8 +1,9 @@
 @extends('administration.layout')
 @section('content')
+<h1>Liste des questions du sondage</h1>   
 <div>  
-  <table class="table">
-    <thead>
+  <table class="table table-striped mb-3">
+    <thead class="thead-dark">
       <tr>
         <th scope="col">Numéro</th>
         <th scope="col">Question</th>
@@ -16,8 +17,7 @@
         <td>{{$question->titre}}</td>
         <td>{{$question->type->libelle}}</td>
       </tr>
-      @endforeach
-      <h1>Liste des questions du sondage</h1>
+      @endforeach      
     </tbody>
   </table>
 </div>
