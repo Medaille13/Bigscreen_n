@@ -42,9 +42,6 @@ Route::middleware('auth')->group(function () {
 });
 require __DIR__.'/auth.php';
 
-//bouton déconnexion de l'administration (bonus pas demandé)
-
-
 
 //----------------TEST---------------------
 //test dd dump et le comportement dans la vue

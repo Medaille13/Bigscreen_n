@@ -146,16 +146,16 @@
         {
             @if($question_id == 11)
             label: 'qualité de l’image',
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            backgroundColor: 'rgba(15, 255, 249, 0.3)',
             @elseif($question_id == 12)
             label: 'confort d’utilisation',
-            backgroundColor: 'rgba(10, 40, 12, 0.4)',
+            backgroundColor: 'rgba(255, 106, 178, 0.3)',
             @elseif($question_id == 13)
             label: 'connexion réseau',
-            backgroundColor: 'rgba(255, 99, 132, 0.6)',
+            backgroundColor: 'rgba(217, 240, 17, 0.3)',
             @elseif($question_id == 14)
             label: 'qualité des graphismes',
-            backgroundColor: 'rgba(255, 50, 255, 0.8)',
+            backgroundColor: 'rgba(107, 255, 165, 0.3)',
             @elseif($question_id == 15)
             label: 'qualité audio',    
             backgroundColor: 'rgba(255, 99, 132, 0.1)',        
@@ -163,58 +163,13 @@
             
             data: [{{implode(',',$reponses)}}],
             fill: true,
-            borderColor: 'rgb(100, 99, 12)',
-            pointBackgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(108, 197, 235)',
+            pointBackgroundColor: 'rgb(230, 158, 32)',
             pointBorderColor: '#fff',
             pointHoverBackgroundColor: '#fff',
             pointHoverBorderColor: 'rgb(255, 99, 132)'
         }, 
         @endforeach
-        /*{
-            label: 'confort d’utilisation',
-            data: [28, 48, 40, 19, 96],
-            fill: true,
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgb(54, 162, 235)',
-            pointBackgroundColor: 'rgb(54, 162, 235)',
-            pointBorderColor: '#fff',
-            pointHoverBackgroundColor: '#fff',
-            pointHoverBorderColor: 'rgb(54, 162, 235)'
-        },
-        {
-            label: 'connexion réseau',
-            data: [28, 48, 40, 19, 100],
-            fill: true,
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgb(54, 162, 235)',
-            pointBackgroundColor: 'rgb(54, 162, 235)',
-            pointBorderColor: '#fff',
-            pointHoverBackgroundColor: '#fff',
-            pointHoverBorderColor: 'rgb(54, 162, 235)'
-        },
-        {
-            label: 'qualité des graphismes',
-            data: [28, 48, 40, 27, 100],
-            fill: true,
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgb(54, 162, 235)',
-            pointBackgroundColor: 'rgb(54, 162, 235)',
-            pointBorderColor: '#fff',
-            pointHoverBackgroundColor: '#fff',
-            pointHoverBorderColor: 'rgb(54, 162, 235)'
-        },
-        {
-            label: 'qualité audio',
-            data: [28, 10, 15, 27, 100],
-            fill: true,
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
-            borderColor: 'rgb(54, 162, 235)',
-            pointBackgroundColor: 'rgb(54, 162, 235)',
-            pointBorderColor: '#fff',
-            pointHoverBackgroundColor: '#fff',
-            pointHoverBorderColor: 'rgb(54, 162, 235)'
-        }
-    */
     ]
     };
     

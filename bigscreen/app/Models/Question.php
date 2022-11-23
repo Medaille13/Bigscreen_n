@@ -12,7 +12,7 @@ class Question extends Model
 {
     use HasFactory;
     
-    protected $table = 'questions'; // si suppression de 7 ligne tout ok //pas besoin de mettr cet ligne car bonne regle de nommage s ou sans s.
+    protected $table = 'questions';
     protected $guarded = [];
     
     
@@ -25,8 +25,7 @@ class Question extends Model
     {
         return $this->belongsTo(Type::class);
     }
-    
-    
+        
     public  function get_answers_with_users()
     {   
         return $this->hasMany(Answer::class,'question_id','id')->with('user');

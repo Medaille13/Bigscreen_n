@@ -23,5 +23,4 @@ class Answer extends Model
     {
         return $this->belongsTo(People::class);
     }
-
 }
