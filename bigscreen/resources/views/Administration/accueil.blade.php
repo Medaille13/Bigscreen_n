@@ -1,6 +1,6 @@
 @extends('administration.layout')
 @section('content')
-<h1>Statistique du sondage</h1>
+<h1 class="text-center">Statistique du sondage</h1>
 <div class="container">
     <div class="row align-items-start">
         <div class="col p-5">

@@ -1,11 +1,12 @@
 @extends('administration.layout')
 @section('content')
-<h1>Liste des réponses pour chaque sondé</h1>
+<h1 class="text-center">Liste des réponses pour {{$users->count()}}  sondés</h1>
 <div>
   @if($users->isNotEmpty())
   @foreach($users as $user)
   @if($user->answers_with_question->isNotEmpty())
-  <table class="table table-striped mb-3">
+  <div class="lead bg-primary " style="display:inline-block">Sondé numéro : {{$loop->iteration  }}&nbsp</div>
+  <table class="table table-striped mb-3 text-center">
     <thead class="thead-dark">
       <tr>
         <th scope="col">Numéro</th>

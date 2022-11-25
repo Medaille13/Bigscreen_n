@@ -9,7 +9,7 @@
 </head>
 <body>
  <div class="container-first p-3 mb-2 bg-primary text-white">
-    <h1 align="center"><span>Sondage</span> <span>{{(!is_null($user)?$user->email:'bigscreen')}}</span></h1>
+    <h1 align="center"><span>Sondage de l'utilisateur :</span> <span>{{(!is_null($user)?$user->email:'bigscreen')}}</span></h1>
 </div>    
     @foreach($questions as $question)
     @foreach($user->answers as $answer)

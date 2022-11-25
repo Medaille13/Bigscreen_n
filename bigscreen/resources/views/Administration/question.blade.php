@@ -1,8 +1,8 @@
 @extends('administration.layout')
 @section('content')
-<h1>Liste des questions du sondage</h1>   
+<h1 class="text-center">Liste des questions du sondage</h1>   
 <div>  
-  <table class="table table-striped mb-3">
+  <table class="table table-striped mb-3 text-center">
     <thead class="thead-dark">
       <tr>
         <th scope="col">Numéro</th>

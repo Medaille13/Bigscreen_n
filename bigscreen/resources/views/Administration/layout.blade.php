@@ -8,11 +8,11 @@
   <title>Page d'accueil de la partie administration</title>
 </head>
 <body>
-  <main class="container-fluid text-center">
+  <main class="container-fluid ">
     <div class="row"> 
-        <div class="col-2 d-flex flex-column justify-content-top align-items-center bg-info">
+        <div class="col-2 d-flex flex-column justify-content-top align-items-center bg-info text-center">
           <div class="position-sticky top-0 pt-5">
-            <img src={{asset('img/bigscreen.jpg')}}>  
+            <img class="img-fluid" src={{asset('img/bigscreen.jpg')}}>  
             <a class="link-light d-block p-2" href="{{route('administrationaccueil')}}">Revenir à l'accueil</a> 
             <a class="link-light d-block p-2" href="{{route('recuperationquestion')}}">Questionnaire</a>  
             <a class="link-light d-block p-2" href="{{route('recupetout')}}">Reponses</a>

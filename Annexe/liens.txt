@@ -1,24 +1,18 @@
-figma
-https://www.figma.com/file/HQwrHBn0XlT0sJtqXMLadm/Wireframing-in-Figma?node-id=111%3A285
-
-trello
-https://trello.com/b/oIO6BjgR/bigscreen
-
-github
+github :
 https://github.com/Medaille13/Bigscreen_n
 
+trello :
+https://trello.com/b/oIO6BjgR/bigscreen
 
-https://laravel.com/docs/9.x/eloquent-relationships#one-to-many
-php artisan route:list
+figma :
+https://www.figma.com/file/HQwrHBn0XlT0sJtqXMLadm/Wireframing-in-Figma?node-id=111%3A285
 
-https://laravel.com/docs/9.x/collections#available-methods
+Le site en ligne :
+https://bigscreen.ltpdeveloppement.fr/
 
+Pour se connecter à l'administration du site :
+https://bigscreen.ltpdeveloppement.fr/administration
 
-Bigscreen
-ff)S32QxZ*Won*IqvZ6a
-
-
-answer->question->titre, récupere titre en rapport avec la question
-
-si l'id de la question est égal à la question_id de la réponse, alors tu m'affiches ce que je veux
+identifiant : hyjus@mailinator.com
+mot de passe : 12345678
 
