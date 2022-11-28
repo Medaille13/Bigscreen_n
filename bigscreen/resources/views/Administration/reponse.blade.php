@@ -5,7 +5,7 @@
   @if($users->isNotEmpty())
   @foreach($users as $user)
   @if($user->answers_with_question->isNotEmpty())
-  <div class="lead bg-primary " style="display:inline-block">Sondé numéro : {{$loop->iteration  }}&nbsp</div>
+  <div class="lead bg-primary text-white " style="display:inline-block">Sondé numéro : {{$loop->iteration  }}&nbsp</div>
   <table class="table table-striped mb-3 text-center">
     <thead class="thead-dark">
       <tr>
